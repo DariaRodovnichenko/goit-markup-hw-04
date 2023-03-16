@@ -206,6 +206,7 @@ address {
 /**Advantages*/
 .advantages {
   padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .visualy-hidden {
@@ -233,6 +234,7 @@ address {
   letter-spacing: var(--general-letter-spacing);
   color: var(--title-text-color);
   width: 264px;
+  margin-top: 8px;
 }
 
 .adv-list-text {
@@ -245,7 +247,6 @@ address {
 
 /**Our Works*/
 .our-works {
-  padding-top: 120px;
   padding-bottom: 120px;
 }
 
@@ -320,6 +321,67 @@ address {
 
 .social-list {
   display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 8px;
+}
+
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: var(--general-align-items);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: #404bbf;
+}
+
+.social-list-icon {
+  fill: #f4f4fd;
+}
+
+/**CUSTOMERS*/
+.customers {
+  padding-top: 130px;
+  padding-bottom: 120px;
+}
+
+.customers-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 72px;
+}
+
+.customers-link {
+  box-sizing: border-box;
+  width: 168px;
+  height: 88px;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  padding: 16px 32px;
+  display: flex;
+  justify-content: center;
+  align-items: var(--general-align-items);
+}
+
+.customers-icon {
+  fill: #8e8f99;
+}
+
+.customers-link:hover,
+.customers-link:focus {
+  border: 1px solid #404bbf;
+}
+
+.customers-link:hover .customers-icon,
+.customers-link:focus .customers-icon {
+  fill: #404bbf;
 }
 
 /**FOOTER*/
@@ -330,15 +392,55 @@ address {
 .footer {
   background-color: var(--second-bg-color);
   padding: 100px 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer-container {
+  width: 294px;
+  margin-left: 156px;
+  margin-right: 120px;
 }
 
 .footer-text {
   font-size: 16px;
-  width: 264px;
   line-height: var(--line-height);
   letter-spacing: var(--general-letter-spacing);
   color: #e7e9fc;
   margin-top: 16px;
+}
+
+.social-media {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: var(--line-height);
+  letter-spacing: var(--general-letter-spacing);
+  color: #ffffff;
+}
+
+.footer-social-list {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.footer-social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social-list-link:hover,
+.footer-social-list-link:focus {
+  background-color: #31d0aa;
+}
+
+.footer-social-list-icon {
+  fill: #f4f4fd;
 }
 
 /**PORTFOLIO*/
@@ -393,6 +495,13 @@ address {
 .gallery-card {
   width: 360px;
   height: 420px;
+}
+
+.gallery-card:hover,
+.gallery-card:focus {
+  border: 1px solid #f4f4fd;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .card-info {
